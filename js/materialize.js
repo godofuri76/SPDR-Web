@@ -8028,4 +8028,16 @@ Picker.extend( 'pickadate', DatePicker )
         $.error( 'Method ' +  methodOrOptions + ' does not exist on jQuery.carousel' );
       }
     }; // Plugin end
+
+    $(document).ready(function(){
+      $('.carousel').carousel({
+		   duration:10000
+		  
+	  });
+	  $('.carousel').carousel('next');
+	$('.carousel').carousel('next', 5);
+    });	
+	
+	
+
 }( jQuery ));
